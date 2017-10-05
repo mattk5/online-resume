@@ -25,11 +25,13 @@ h3 {
 .portrait {
   background-color: purple;
   height: 50%;
+  padding-top: 50px;
 }
 
 .links {
   background-color: blue;
   height: 50%;
+  padding-top: 80px;
 }
 
 .list {
