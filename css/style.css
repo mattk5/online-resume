@@ -28,14 +28,24 @@ h3 {
   padding-top: 50px;
 }
 
+.intro {
+  margin-top: 200px;
+}
+
 .links {
   background-color: blue;
   height: 50%;
-  padding-top: 80px;
+  padding-top: 60px;
+  text-align: center;
 }
 
 .list {
   list-style-type: none;
+  padding: 20px;
+}
+
+li {
+  padding: 10px;
 }
 
 .resume {
