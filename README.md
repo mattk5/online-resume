@@ -1,1 +1,1 @@
-**Your First React Project**
+Online Resume created with ReactJS.
