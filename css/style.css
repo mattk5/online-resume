@@ -1,0 +1,38 @@
+html, body {
+  font-family: 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+.profile, .resume {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.profile {
+  background-color: blue;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  width: 30%;
+}
+
+.resume {
+  background-color: red;
+  float: right;
+  width: 70%;
+}
+
+.inner-resume {
+  padding: 40px;
+}
+
+.portrait {
+  background-color: purple;
+}

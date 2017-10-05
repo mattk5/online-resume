@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>matt kubota | online resume</title>
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <body>
 <div id="content"></div>
@@ -18,6 +19,72 @@ var DATA = {
   personal: "mattkubota.co"
 }
 
+var App = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Profile />
+        <Resume />
+      </div>
+    );
+  }
+});
+
+var Profile = React.createClass({
+  render: function() {
+    return (
+      <div className="profile">
+        <div className="portrait">
+          <h3>matt kubota</h3>
+          <h5>profile picture</h5>
+        </div>
+        <div className="links">
+          <h4>technologies i know:</h4>
+        </div>
+      </div>
+    );
+  }
+});
+
+var Resume = React.createClass({
+  render: function() {
+    return (
+      <div className="resume">
+        <div className="inner-resume">
+          <div className="summary">
+            <h3>summary</h3>
+              <div className="content">
+                <p>
+                  Full-Stack Developer with a background in Retail Management who’s passionate about problem solving and creating amazing products. I’m inspired and detail oriented when writing code and always striving for challenges that strengthen my technical skills while collaborating with other creative minds.
+                </p>
+              </div>
+          </div>
+          <div className="projects">
+            <h3>projects</h3>
+              <div className="content">
+                <p>projects</p>
+              </div>
+          </div>
+          <div className="education">
+            <h3>education</h3>
+              <div className="content">
+                <p>education</p>
+              </div>
+          </div>
+          <div className="experience">
+            <h3>experience</h3>
+              <div className="content">
+                <p>experience</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+})
+
+
+ReactDOM.render(<App profileData={DATA} />, document.getElementById('content'));
 </script>
 </body>
 </html>
