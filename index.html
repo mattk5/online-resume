@@ -16,14 +16,19 @@ var DATA = {
   profession: "back-end developer & front-end apprentice",
   github: "https://github.com/mattk5",
   linkedin: "https://linkedin.com/in/mtkubota",
-  personal: "mattkubota.co"
+  personal: "http://mattkubota.co"
 }
 
 var App = React.createClass({
   render: function() {
     return (
       <div>
-        <Profile />
+        <Profile
+          name={this.props.profileData.name}
+          github={this.props.profileData.github}
+          linkedin={this.props.profileData.linkedin}
+          personal={this.props.profileData.personal}
+        />
         <Resume />
       </div>
     );
@@ -35,11 +40,23 @@ var Profile = React.createClass({
     return (
       <div className="profile">
         <div className="portrait">
-          <h3>matt kubota</h3>
-          <h5>profile picture</h5>
+          <h2>{this.props.name}</h2>
+            <h5>oh hai.</h5>
+            <span>back-end specialist, about to level up on the front-end.</span>
         </div>
         <div className="links">
-          <h4>technologies i know:</h4>
+          <h4>you can find me here:</h4>
+          <ul className="list">
+            <li>
+              <a href={this.props.github} target="_blank">github.</a>
+            </li>
+            <li>
+              <a href={this.props.linkedin} target="_blank">linkedin.</a>
+            </li>
+            <li>
+              <a href={this.props.personal} target="_blank">personal page.</a>
+            </li>
+          </ul>
         </div>
       </div>
     );

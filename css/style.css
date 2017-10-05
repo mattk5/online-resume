@@ -14,13 +14,26 @@ h3 {
 }
 
 .profile {
-  background-color: blue;
   float: left;
   height: 100%;
   overflow: hidden;
   position: fixed;
   text-align: center;
   width: 30%;
+}
+
+.portrait {
+  background-color: purple;
+  height: 50%;
+}
+
+.links {
+  background-color: blue;
+  height: 50%;
+}
+
+.list {
+  list-style-type: none;
 }
 
 .resume {
@@ -31,8 +44,4 @@ h3 {
 
 .inner-resume {
   padding: 40px;
-}
-
-.portrait {
-  background-color: purple;
 }
