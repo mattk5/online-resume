@@ -23,7 +23,7 @@ h3 {
 }
 
 .portrait {
-  background-color: purple;
+  background-color: #303F9F;
   height: 50%;
   padding-top: 50px;
 }
@@ -33,7 +33,7 @@ h3 {
 }
 
 .links {
-  background-color: blue;
+  background-color: #9E9E9E;
   height: 50%;
   padding-top: 60px;
   text-align: center;
@@ -48,11 +48,19 @@ li {
   padding: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .resume {
   float: right;
   width: 70%;
 }
 
 .inner-resume {
-  padding: 40px;
+  padding: 50px;
+}
+
+.content {
+  padding-bottom: 30px;
 }

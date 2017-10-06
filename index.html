@@ -12,7 +12,7 @@
 <script type="text/jsx">
 
 var DATA = {
-  name: "Oh hai, I'm Matt Kubota",
+  name: "Hi, I'm Matt Kubota",
   profession: "back-end developer & front-end apprentice",
   github: "https://github.com/mattk5",
   linkedin: "https://linkedin.com/in/mtkubota",
@@ -41,7 +41,7 @@ var Profile = React.createClass({
       <div className="profile">
         <div className="portrait">
           <h1>{this.props.name}</h1>
-            <h5>creating out of New York City</h5>
+            <h4>creating out of New York City</h4>
             <p className="intro">Back-end specialist, about to level up on the Front-end.</p>
         </div>
         <div className="links">
@@ -69,7 +69,7 @@ var Resume = React.createClass({
       <div className="resume">
         <div className="inner-resume">
           <div className="summary">
-            <h3>summary</h3>
+            <h3>Summary</h3>
               <div className="content">
                 <p>
                   Full-Stack Developer with a background in Retail Management who’s passionate about problem solving and creating amazing products. I’m inspired and detail oriented when writing code and always striving for challenges that strengthen my technical skills while collaborating with other creative minds.
@@ -77,7 +77,7 @@ var Resume = React.createClass({
               </div>
           </div>
           <div className="projects">
-            <h3>projects</h3>
+            <h3>Projects</h3>
               <div className="content">
                 <div className="single-project">
                   <a href="">Personal Blog</a>
@@ -97,8 +97,19 @@ var Resume = React.createClass({
                 </div>
               </div>
           </div>
+          <div className="skills">
+            <h3>Skills</h3>
+            <div className="content">
+              <h4>Languages:</h4>
+                <p>Ruby, JavaScript, HTML5, CSS3</p>
+              <h4>Frameworks & Libraries:</h4>
+                <p>Ruby on Rails, ReactJS, jQuery, NodeJS, ExpressJS</p>
+              <h4>Methods:</h4>
+                <p>Test-Driven Development, Git Workflow, Web Development, Pair-Programming, Agile</p>
+            </div>
+          </div>
           <div className="education">
-            <h3>education</h3>
+            <h3>Education</h3>
             <div className="content">
               <h4>Dev Bootcamp</h4>
               <h5>Full-Stack Developer 2016</h5>
@@ -106,7 +117,7 @@ var Resume = React.createClass({
             </div>
           </div>
           <div className="experience">
-            <h3>experience</h3>
+            <h3>Experience</h3>
               <div className="content">
                 <div className="single-role">
                   <h4>J. Crew</h4>
