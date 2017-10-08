@@ -12,7 +12,7 @@
 <script type="text/jsx">
 
 var DATA = {
-  name: "Hi, I'm Matt Kubota",
+  name: "Hi, I'm Matt Kubota.",
   profession: "back-end developer & front-end apprentice",
   github: "https://github.com/mattk5",
   linkedin: "https://linkedin.com/in/mtkubota",
@@ -41,20 +41,20 @@ var Profile = React.createClass({
       <div className="profile">
         <div className="portrait">
           <h1>{this.props.name}</h1>
-            <h4>creating out of New York City</h4>
+            <h4>Creating out of New York City.</h4>
             <p className="intro">Back-end specialist, about to level up on the Front-end.</p>
         </div>
         <div className="links">
           <h4>You can find me here:</h4>
           <ul className="list">
             <li>
-              <a href={this.props.github} target="_blank">Github.</a>
+              <a className="single-link" href={this.props.github} target="_blank">Github.</a>
             </li>
             <li>
-              <a href={this.props.linkedin} target="_blank">Linkedin.</a>
+              <a className="single-link" href={this.props.linkedin} target="_blank">Linkedin.</a>
             </li>
             <li>
-              <a href={this.props.personal} target="_blank">Personal page.</a>
+              <a className="single-link" href={this.props.personal} target="_blank">Personal page.</a>
             </li>
           </ul>
         </div>
@@ -69,7 +69,7 @@ var Resume = React.createClass({
       <div className="resume">
         <div className="inner-resume">
           <div className="summary">
-            <h3>Summary</h3>
+            <h2>Summary</h2>
               <div className="content">
                 <p>
                   Full-Stack Developer with a background in Retail Management who’s passionate about problem solving and creating amazing products. I’m inspired and detail oriented when writing code and always striving for challenges that strengthen my technical skills while collaborating with other creative minds.
@@ -77,39 +77,45 @@ var Resume = React.createClass({
               </div>
           </div>
           <div className="projects">
-            <h3>Projects</h3>
+            <h2>Projects</h2>
               <div className="content">
                 <div className="single-project">
-                  <a href="">Personal Blog</a>
+                  <a className="project-link" href="">Personal Blog</a>
                   <p>The second iteration of my personal page/blog. Created with Ruby On Rails and Bootstrap, users can download the source code to create their own personal website with blog functionality.</p>
                 </div>
                 <div className="single-project">
-                  <a href="">Find Me Here</a>
+                  <a className="project-link" href="">Find Me Here</a>
                   <p>A Ruby On Rails project that allows the user to send their current location in an SMS to contacts of their choice.</p>
                 </div>
                 <div className="single-project">
-                  <a href="">Biz Card</a>
+                  <a className="project-link" href="">Biz Card</a>
                   <p>A two-person Express-React project built over the course of a month that provides the user with a simple interface to search for the contact information of a company.</p>
                 </div>
                 <div className="single-project">
-                  <a href="">Bot Or Not</a>
+                  <a className="project-link" href="">Bot Or Not</a>
                   <p>A four-person React-Rails project built in 7-days that is an in person multi-player bluffing game. A team of robots disguised as humans attempt to conquer the world unless you can complete your mission of discovering and stopping them.</p>
                 </div>
               </div>
           </div>
           <div className="skills">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <div className="content">
-              <h4>Languages:</h4>
-                <p>Ruby, JavaScript, HTML5, CSS3</p>
-              <h4>Frameworks & Libraries:</h4>
-                <p>Ruby on Rails, ReactJS, jQuery, NodeJS, ExpressJS</p>
-              <h4>Methods:</h4>
-                <p>Test-Driven Development, Git Workflow, Web Development, Pair-Programming, Agile</p>
+              <div className="skill-section">
+                <strong>Languages: &nbsp;</strong>
+                <span>Ruby, JavaScript, HTML5, CSS3</span>
+              </div>
+              <div className="skill-section">
+                <strong>Frameworks & Libraries: &nbsp;</strong>
+                <span>Ruby on Rails, ReactJS, jQuery, NodeJS, ExpressJS</span>
+              </div>
+              <div className="skill-section">
+                <strong>Methods: &nbsp;</strong>
+                <span>Test-Driven Development, Git Workflow, Web Development, Pair-Programming, Agile</span>
+              </div>
             </div>
           </div>
           <div className="education">
-            <h3>Education</h3>
+            <h2>Education</h2>
             <div className="content">
               <h4>Dev Bootcamp</h4>
               <h5>Full-Stack Developer 2016</h5>
@@ -117,20 +123,29 @@ var Resume = React.createClass({
             </div>
           </div>
           <div className="experience">
-            <h3>Experience</h3>
+            <h2>Experience</h2>
               <div className="content">
                 <div className="single-role">
-                  <h4>J. Crew</h4>
+                  <div>
+                    <h4>J. Crew</h4>
+                    <div className="length">Oct 2016 - Present</div>
+                  </div>
                   <h5>Lead Cashier, Stylist</h5>
                   <p>Manages opening and closing of tills and communicating with team about promotions and other operation points. Also creates clothing options for customers based off of meaningful connections created through great customer service. Drives sales by suggesting items that complement pieces chosen by the customer.</p>
                 </div>
                 <div className="single-role">
-                  <h4>The Vitamin Shoppe</h4>
+                  <div>
+                    <h4>The Vitamin Shoppe</h4>
+                    <div className="length">Aug 2014 - Jun 2016</div>
+                  </div>
                   <h5>Store Manager</h5>
                   <p>Created and executed initiatives which increased customer base and exceeded sales goals for the fiscal year. Implemented customized development plans and as a result, team members where able to grow and progress within the company. Ensured that store operations fell within budget and inventory levels were consistent.</p>
                 </div>
                 <div className="single-role">
-                  <h4>The Vitamin Shoppe</h4>
+                  <div>
+                    <h4>The Vitamin Shoppe</h4>
+                    <div className="length">Apr 2012 - Aug 2014</div>
+                  </div>
                   <h5>Assistant Store Manager</h5>
                   <p>Partnered with team members to ensure that excellent customer service was delivered to each customer. Charged with developing team members in preparation for future advancement within the company.</p>
                 </div>
